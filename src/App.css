@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #1e4d92 0%, #2a82ba 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 50px;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.weather-form {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+}
+
+.city-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #ff5252;
+}
+
+.weather-info {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.weather-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.temperature h3 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.temperature p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: left;
+}
+
+.weather-details p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.error-message {
+  background-color: rgba(255, 107, 107, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+  color: #ff6b6b;
+  font-weight: 500;
+  border-left: 4px solid #ff6b6b;
+}
+
+.demo-mode {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.demo-button {
+  background-color: #45aaf2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  margin-bottom: 8px;
+}
+
+.demo-button:hover {
+  background-color: #2d98da;
+}
+
+.demo-note {
+  font-size: 0.8rem;
+  margin: 0;
+  opacity: 0.7;
+}
