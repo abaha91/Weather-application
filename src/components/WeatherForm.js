@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { getWeatherData } from '../services/weatherService';
-import { weatherDemoData } from '../demoData';
 
 const WeatherForm = ({ setWeatherData, setLoading, setError }) => {
   const [city, setCity] = useState('');
@@ -27,17 +26,6 @@ const WeatherForm = ({ setWeatherData, setLoading, setError }) => {
     }
   };
 
-  const useDemoData = () => {
-    setLoading(true);
-    setError(null);
-    
-    // Имитация задержки сети
-    setTimeout(() => {
-      setWeatherData(weatherDemoData);
-      setLoading(false);
-    }, 500);
-  };
-
   return (
     <div>
       <form onSubmit={handleSubmit} className="weather-form">
@@ -52,15 +40,6 @@ const WeatherForm = ({ setWeatherData, setLoading, setError }) => {
           <button type="submit" className="search-button">Get Weather</button>
         </div>
       </form>
-      
-      <div className="demo-mode">
-        <button onClick={useDemoData} className="demo-button">
-          Use Demo Data (Moscow)
-        </button>
-        <p className="demo-note">
-          * For workshop: if API is unavailable or the key is not activated
-        </p>
-      </div>
     </div>
   );
 };
